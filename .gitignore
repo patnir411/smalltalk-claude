@@ -1,0 +1,39 @@
+# Store your API key in this file, and it will be ignored by Git
+config.js
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore build directories
+dist/
+build/
+
+# Ignore environment variable files
+.env
+.env.local
+
+# Ignore any temporary files
+*.tmp
+*.temp
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore coverage reports
+coverage/
+
+# Ignore compiled JavaScript files
+*.js.map
+
+# Ignore lock files
+package-lock.json
+yarn.lock
+# End Generation Here

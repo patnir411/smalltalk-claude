@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ask a Question</title>
+		<style>
+			body {
+				width: 300px;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+					Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+				background: #f8f9fa;
+			}
+			.container {
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+				padding: 16px;
+			}
+
+			.input-wrapper {
+				position: relative;
+				width: 90%;
+			}
+
+			input {
+				width: 100%;
+				padding: 12px 16px;
+				font-size: 14px;
+				border: 2px solid #e1e4e8;
+				border-radius: 8px;
+				outline: none;
+				box-sizing: border-box;
+				transition: all 0.2s ease;
+				background: white;
+			}
+
+			input:focus {
+				border-color: #0366d6;
+				box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.1);
+			}
+
+			input::placeholder {
+				color: #8b949e;
+			}
+
+			.header {
+				font-size: 16px;
+				font-weight: 600;
+				color: #24292e;
+				margin-bottom: 4px;
+			}
+
+			.subtitle {
+				font-size: 12px;
+				color: #57606a;
+				margin-bottom: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="input-wrapper">
+				<input
+					type="text"
+					id="question"
+					placeholder="Ask about your selected text..."
+					autofocus
+				/>
+			</div>
+		</div>
+		<script src="popup.js"></script>
+	</body>
+</html>
