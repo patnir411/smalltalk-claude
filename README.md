@@ -8,6 +8,11 @@ Small Talk with Claude is a Chrome extension that uses Claude AI to help you und
 
 → Ask questions about the selected text (**Cmd+Shift+P**)
 
+## Preview
+
+![Panels](demo/panels.png)
+![Context Menu](demo/context_menu.png)
+
 ## Features
 
 -   **Context Menu**: Right-click any selected text to access Small Talk features
