@@ -1,17 +1,58 @@
-# Small Talk 🐁
+# Small Talk with Claude
 
-Small Talk is a simple Chrome extension that uses a local instance of [Gemini Nano](https://deepmind.google/technologies/gemini/nano/) via the experimental [Prompt API](https://developer.chrome.com/docs/ai/built-in) in Chrome.
-
-It can:
+Small Talk with Claude is a Chrome extension that uses Claude AI to help you understand text better. Simply highlight any text on a webpage and use the extension to:
 
 → Summarize highlighted text (**Cmd+Shift+S**)
 
 → Explain content as if you're 5 years old (**Cmd+Shift+E**)
 
-It can also read the generated summaries and explanations aloud using [Cartesia](https://cartesia.ai/)'s lightning fast Text-to-Speech model.
+→ Ask questions about the selected text (**Cmd+Shift+P**)
+
+## Features
+
+-   **Context Menu**: Right-click any selected text to access Small Talk features
+-   **Keyboard Shortcuts**: Quick access with keyboard commands
+-   **Interactive UI**: Clean, minimal interface for asking questions
+-   **Smart Formatting**: Preserves original text styling while showing AI responses
+-   **Markdown Support**: Responses support bold, italic, links, and line breaks
 
 ## Configuration
 
-Before running the extension, you need to get an API key from [Cartesia](https://cartesia.ai/) and set it at the top of the `content.js` file.
+Before using the extension:
 
-You also need to be running the latest version of Chrome Canary with some experimenal flags enabled. You can find more information on how to set up your environment [here](https://developer.chrome.com/docs/ai/built-in).
+1. Create a `config.js` file in the root directory
+2. Add your Claude API key:
+
+```javascript
+const CONFIG = {
+	API_KEY: "your-anthropic-api-key-here"
+};
+```
+
+## Installation
+
+1. Clone this repository
+2. Add your API key as described above
+3. Open Chrome and go to `chrome://extensions/`
+4. Enable "Developer mode"
+5. Click "Load unpacked" and select the extension directory
+
+## Keyboard Shortcuts
+
+-   **Cmd+Shift+S** (Mac) / **Ctrl+Shift+S** (Windows): Summarize text
+-   **Cmd+Shift+E** (Mac) / **Ctrl+Shift+E** (Windows): Explain like I'm 5
+-   **Cmd+Shift+P** (Mac) / **Ctrl+Shift+P** (Windows): Ask a question
+
+## Usage
+
+1. Select any text on a webpage
+2. Either:
+    - Right-click and choose an option from the Small Talk menu
+    - Use a keyboard shortcut
+    - Click the extension icon and type a question
+3. View the AI-generated response right on the page
+4. Click the response to restore the original text
+
+## Privacy Note
+
+This extension sends selected text to Claude's API for processing. Please be mindful of sharing sensitive information.
